@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 10px;
+            padding: 10px;
+            height: calc(100vh - 20px - 40px); /* Adjusted height: total viewport height - header height - padding */
+        }
+
+        .grid-item {
+            background-color: #515151;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            /* width: 50px; */
+            height: 80px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        PeaceRep and PA-X Logos
+    </header>
+    <div class="grid-container">
+        <!-- First column -->
+        <div class="grid-item" style="grid-row: 1;">
+            <a href="img/PeaceRep_bg.jpg" download>
+                <img src="img/PeaceRep_bg.jpg" alt="Placeholder Image 1">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 2;">
+            <a href="img/PeaceRep_Icon_bg.jpg" download>
+                <img src="img/PeaceRep_Icon_bg.jpg" alt="Placeholder Image 2">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 3;">
+            <a href="img/Pax_bg.png" download>
+                <img src="img/Pax_bg.png" alt="Placeholder Image 3">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 4;">
+            <a href="img/Pax_Circle_bg.jpg" download>
+                <img src="img/Pax_Circle_bg.jpg" alt="Placeholder Image 4">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 5;">
+            <a href="img/Pax_local_bg.png" download>
+                <img src="img/Pax_local_bg.png" alt="Placeholder Image 5">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 6;">
+            <a href="img/Pax_Gender_bg.png" download>
+                <img src="img/Pax_Gender_bg.png" alt="Placeholder Image 6">
+            </a>
+        </div>
+
+        <!-- Second column -->
+        <div class="grid-item" style="grid-row: 1;">
+            <a href="img/PeaceRep_nobg.png" download>
+                <img src="img/PeaceRep_nobg.png" alt="Placeholder Image 7">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 2;">
+            <a href="img/PeaceRep_Icon_nobg.jpg" download>
+                <img src="img/PeaceRep_Icon_nobg.jpg" alt="Placeholder Image 8">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 3;">
+            <a href="img/Pax_nobg.png" download>
+                <img src="img/Pax_nobg.png" alt="Placeholder Image 9">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 4;">
+            <a href="img/Pax_Circle_nobg.jpg" download>
+                <img src="img/Pax_Circle_nobg.jpg" alt="Placeholder Image 10">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 5;">
+            <a href="img/Pax_local_nobg.png" download>
+                <img src="img/Pax_local_nobg.png" alt="Placeholder Image 11">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 6;">
+            <a href="img/Pax_Gender_nobg.png" download>
+                <img src="img/Pax_Gender_nobg.png" alt="Placeholder Image 12">
+            </a>
+        </div>
+
+        <!-- Third column -->
+        <div class="grid-item" style="grid-row: 1;">
+            <a href="img/PeaceRep_white.jpg" download>
+                <img src="img/PeaceRep_white.jpg" alt="Placeholder Image 13">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 2;">
+            <a href="img/PeaceRep_Icon_white.jpg" download>
+                <img src="img/PeaceRep_Icon_white.jpg" alt="Placeholder Image 14">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 3;">
+            <a href="img/Pax_white.png" download>
+                <img src="img/Pax_white.png" alt="Placeholder Image 15">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 4;">
+            <a href="img/Pax_Circle_white.jpg" download>
+                <img src="img/Pax_Circle_white.jpg" alt="Placeholder Image 16">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 5;">
+            <a href="img/Pax_local_white.png" download>
+                <img src="img/Pax_local_white.png" alt="Placeholder Image 17">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 6;">
+            <a href="img/Pax_Gender_white.png" download>
+                <img src="img/Pax_Gender_white.png" alt="Placeholder Image 18">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
