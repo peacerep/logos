@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Grid Layout Example</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            background-color: black;
+            font-family: "Montserrat";
             display: flex;
             flex-direction: column;
             height: 100vh;
@@ -15,7 +17,7 @@
 
         header {
             height: 50px;
-            background-color: #333;
+            background-color: #000000;
             color: white;
             display: flex;
             align-items: center;
@@ -34,7 +36,8 @@
 
         .grid-item {
             background-color: #515151;
-            border: 1px solid #ddd;
+            border-radius: 2px;
+            /* border: 1px solid #ddd; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,7 +53,7 @@
 </head>
 <body>
     <header>
-        PeaceRep and PA-X Logos
+        PeaceRep and PA-X Logos [click on the logo to download]
     </header>
     <div class="grid-container">
         <!-- First column -->
