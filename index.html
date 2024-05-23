@@ -1,59 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <title>Grid Layout Example</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: black;
-            font-family: "Montserrat";
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        header {
-            height: 50px;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            gap: 10px;
-            padding: 10px;
-            height: calc(100vh - 20px - 40px); /* Adjusted height: total viewport height - header height - padding */
-        }
-
-        .grid-item {
-            background-color: #515151;
-            border-radius: 2px;
-            /* border: 1px solid #ddd; */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .grid-item img {
-            /* width: 50px; */
-            height: 80px;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <title>PaceRep</title>
 </head>
+
 <body>
     <header>
-        PeaceRep and PA-X Logos [click on the logo to download]
+        <button id="logo_btn">Logos</button>
+        <button id="color_btn">Colours</button>
+        PeaceRep and PA-X
     </header>
     <div class="grid-container">
         <!-- First column -->
@@ -151,6 +111,309 @@
                 <img src="img/Pax_Gender_white.png" alt="Placeholder Image 18">
             </a>
         </div>
+
+        <!-- Fourth column -->
+        <div class="grid-item" style="grid-row: 1;">
+            <a href="img/uoe_bg.jpg" download>
+                <img src="img/uoe_bg.jpg" alt="Placeholder Image 13">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 2;">
+            <a href="img/ueo_nobg.png" download>
+                <img src="img/ueo_nobg.png" alt="Placeholder Image 14">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 3;">
+            <a href="img/uoe_white.png" download>
+                <img src="img/uoe_white.png" alt="Placeholder Image 15">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 4;">
+            <a href="img/uoe_sm_bg.jpg" download>
+                <img src="img/uoe_sm_bg.jpg" alt="Placeholder Image 16">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 5;">
+            <a href="img/uoe_sm_nobg.png" download>
+                <img src="img/uoe_sm_nobg.png" alt="Placeholder Image 17">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 6;">
+            <a href="img/uoe_sm_white.png" download>
+                <img src="img/uoe_sm_white.png" alt="Placeholder Image 18">
+            </a>
+        </div>
+
+        <!-- Fifth column -->
+        <div class="grid-item" style="grid-row: 1;">
+            <a href="img/st_andrews_bg.png" download>
+                <img src="img/st_andrews_bg.png" alt="Placeholder Image 13">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 2;">
+            <a href="img/st_andrews_nobg.png" download>
+                <img src="img/st_andrews_nobg.png" alt="Placeholder Image 14">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 3;">
+            <a href="img/st_andrews_white.png" download>
+                <img src="img/st_andrews_white.png" alt="Placeholder Image 15">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 4;">
+            <a href="img/st_andrews_sm_bg.png" download>
+                <img src="img/st_andrews_sm_bg.png" alt="Placeholder Image 16">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 5;">
+            <a href="img/st_andrews_sm_nobg.png" download>
+                <img src="img/st_andrews_sm_nobg.png" alt="Placeholder Image 17">
+            </a>
+        </div>
+        <div class="grid-item" style="grid-row: 6;">
+            <a href="img/st_andrews_sm_white.png" download>
+                <img src="img/st_andrews_sm_white.png" alt="Placeholder Image 18">
+            </a>
+        </div>
     </div>
+
+    <div class="grid-container-1">
+        <!-- First column -->
+        <div class="grid-item" style="grid-row: 1; background-color: #091F40; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 9/31/64<br>
+                HEX: #091F40<br>
+                CMYK: 100/87/42/51
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 2; background-color: #FDD900; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 254/218/0<br>
+                HEX: #FDD900<br>
+                CMYK: 2/11/100/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 3; background-color: #DF1F36; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 221/30/54<br>
+                HEX: #DF1F36<br>
+                CMYK: 7/100/84/1
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 4; background-color: #AC4399; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                local
+                RGB: 171/66/152<br>
+                HEX: #AC4399<br>
+                CMYK: 35/88/0/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 5; background-color: #3AAE2A; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 64/175/74<br>
+                HEX: #3AAE2A<br>
+                CMYK: 75/4/99/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 6; background-color: #0B5740; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                inter/mixed
+                RGB: 0/87/64<br>
+                HEX: #0B5740<br>
+                CMYK: 90/40/79/37
+            </div>
+        </div>
+
+
+        <!-- Second column -->
+        <div class="grid-item" style="grid-row: 1; background-color: #016099; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                interstate
+                RGB: 0/97/151<br>
+                HEX: #016099<br>
+                CMYK: 100/62/18/2
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 2; background-color: #FD8189; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 243/128/138<br>
+                HEX: #FD8189<br>
+                CMYK: 0/63/31/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 3; background-color: #3AAE2A; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 64/175/74<br>
+                HEX: #3AAE2A<br>
+                CMYK: 75/4/99/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 4; background-color: #61C8B9; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 108/199/184<br>
+                HEX: #61C8B9<br>
+                CMYK: 56/0/34/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 5; background-color: #F28B20; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                intrastate
+                RGB: 241/139/33<br>
+                HEX: #F28B20<br>
+                CMYK: 2/55/100/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 6; background-color: #008FBE; color: white;">
+            <div style="background-color: black; padding: 10px; border-radius: 5px;">
+                RGB: 0/145/186<br>
+                HEX: #008FBE<br>
+                CMYK: 100/23/19/0
+            </div>
+        </div>
+        <div class="grid-item" style="grid-row: 7; background-color: #008FBE; color: white;">
+            <!-- <div style="background-color: black; padding: 11px; border-radius: 5px;">
+                RGB: 1/145/186<br>
+                HEX: #9FBE<br>
+                CMYK: 101/23/19/0
+            </div> -->
+        </div>
+
+
+        <!-- Third column -->
+        <div class="grid-item" style="grid-row: 1; background-color: #34495E; color: white;"">
+            <div style=" background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Peace Agreement</h5>
+            RGB: 52/73/94<br>
+            HEX: #34495E<br>
+            CMYK: 16/8/0/63
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 2; background-color: #657585; color: white;"">
+            <div style=" background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Party</h5>
+        RGB: 101/117/133<br>
+        HEX: #657585<br>
+        CMYK: 13/6/0/48
+    </div>
+    </div>
+    <div class="grid-item" style="grid-row: 3; background-color: #F4A425; color: white;"">
+            <div style=" background-color: black; padding: 10px; border-radius: 5px;">
+           <h5>Third-Party</h5>
+        RGB: 244/164/37<br>
+        HEX: #F4A425<br>
+        CMYK: 0/31/81/4
+    </div>
+    </div>
+    <div class="grid-item" style="grid-row: 4;background-color: #2980B9; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Intergovernmental Org.</h5>
+            RGB: 41/128/185<br>
+            HEX: #2980B9<br>
+            CMYK: 56/22/0/27
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 5;background-color: #BCBD22; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Nongovernmental Org.</h5>
+            RGB: 188/189/34<br>
+            HEX: #BCBD22<br>
+            CMYK: 0/0/61/26
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 6;background-color: #03A9F4; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>State Coalition</h5>
+            RGB: 3/169/244<br>
+            HEX: #03A9F4<br>
+            CMYK: 95/29/0/4
+        </div>
+    </div>
+
+
+    <!-- Fourth column -->
+    <div class="grid-item" style="grid-row: 1;background-color: #198038; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Country/State</h5>
+            RGB: 25/128/56<br>
+            HEX: #198038<br>
+            CMYK: 40/0/28/50
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 2;background-color: #8C564B; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Military (State)</h5>
+            RGB: 140/86/75<br>
+            HEX: #8C564B<br>
+            CMYK: 0/21/25/45
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 3;background-color: #D62728; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Armed Org.</h5>
+            RGB: 214/39/40<br>
+            HEX: #D62728<br>
+            CMYK: 0/69/68/16
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 4;background-color: #9467BD; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Political Party</h5>
+            RGB: 148/103/189<br>
+            HEX: #9467BD<br>
+            CMYK: 16/34/0/26
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 5;background-color: #E377C2; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Umbrella (Armed)</h5>
+            RGB: 227/119/194<br>
+            HEX: #E377C2<br>
+            CMYK: 0/42/13/11
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 6;background-color: #FF7F0E; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Entity</h5>
+            RGB: 255/127/14<br>
+            HEX: #FF7F0E<br>
+            CMYK: 0/50/95/0
+        </div>
+    </div>
+
+    <!-- Fifth column -->
+    <div class="grid-item" style="grid-row: 1;background-color: #F1C40F; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Other</h5>
+            RGB: 241/196/15<br>
+            HEX: #F1C40F<br>
+            CMYK: 0/18/89/5
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 2;background-color: #F1C30D; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px;">
+            <h5>Mediations/Dialogues</h5>
+            RGB: 241/195/13<br>
+            HEX: #F1C30D<br>
+            CMYK: 0/18/89/5
+        </div>
+    </div>
+    <div class="grid-item" style="grid-row: 3;background-color: #E8857D; color: white;">
+        <div style="background-color: black; padding: 10px; border-radius: 5px; font-size: 14px;">
+            <h5>Involved</h5>
+            RGB: 232/133/125<br>
+            HEX: #E8857D<br>
+            CMYK: 0/39/42/9
+        </div>
+    </div>
+    <!-- <div class="grid-item" style="grid-row: 4;">
+    </div>
+    <div class="grid-item" style="grid-row: 5;">
+    </div>
+    <div class="grid-item" style="grid-row: 6;">
+    </div>
+    </div> -->
 </body>
+<script src="js/d3.v6.min.js"></script>
+<script src="js/index.js"></script>
+
 </html>
