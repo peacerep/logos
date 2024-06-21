@@ -304,7 +304,7 @@ xIcons
 -------------------------------- */
 .cd-icons li {
   /* icons size */
-  width: 50px;
+  width: 80px;
   height: 50px;
 }
 
@@ -1556,15 +1556,19 @@ section:nth-of-type(10) h2::before {
 
 /* xIcons section - basic style */
 .cd-icons li {
+  width: 100px;
   display: inline-block;
   background-position: center center;
   background-repeat: no-repeat;
   margin: 1em;
 }
 
-/* .cd-icons .cd-icon-1 {
-  background-image: url("../assets/icons/clock.png");
-} */
+.cd-icon-1, .cd-icon-2, .cd-icon-3, .cd-icon-4, .cd-icon-5, .cd-icon-6, .cd-icon-7,
+.cd-icon-8, .cd-icon-9, .cd-icon-10, .cd-icon-11, .cd-icon-12, .cd-icon-13, .cd-icon-14
+ {
+  text-align: center;
+  font-size: 14px;
+}
 
 /* .cd-icons .cd-icon-2 {
   background-image: url("../assets/icons/network.png");
