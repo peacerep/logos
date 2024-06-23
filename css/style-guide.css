@@ -17,11 +17,11 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   /* border: 1px solid #e6e6e6; */
   border-radius: 3px;
-  background: #d8d8d8;
+  background: #ffffff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   padding: 6px;
   border-radius: 5px;
-  color: white;
+  /* color: white; */
 }
 
 /* -------------------------------- 
@@ -478,6 +478,7 @@ a {
 }
 
 img {
+  padding: 5px;
   max-width: 100%;
 }
 
@@ -992,6 +993,7 @@ section:nth-of-type(10) h2::before {
 .cd-colors b {
   display: block;
   padding: .6em 0;
+  color: black;
 }
 
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
@@ -1096,6 +1098,7 @@ section:nth-of-type(10) h2::before {
   width: 48%;
   float: left;
   margin: 0 4% 1em 0;
+  color: black;
 }
 
 .cd-colors-agt li:nth-of-type(2n) {
@@ -1171,6 +1174,7 @@ section:nth-of-type(10) h2::before {
   width: 48%;
   float: left;
   margin: 0 4% 1em 0;
+  color: black;
 }
 
 .cd-colors-stg li:nth-of-type(2n) {
@@ -1260,6 +1264,7 @@ section:nth-of-type(10) h2::before {
   width: 48%;
   float: left;
   margin: 0 4% 1em 0;
+  color: black;
 }
 
 .cd-colors-act li:nth-of-type(2n) {
@@ -1360,6 +1365,7 @@ section:nth-of-type(10) h2::before {
   width: 48%;
   float: left;
   margin: 0 4% 1em 0;
+  color: black;
 }
 
 .cd-colors-pagt li:nth-of-type(2n) {
@@ -1431,6 +1437,7 @@ section:nth-of-type(10) h2::before {
   width: 48%;
   float: left;
   margin: 0 4% 1em 0;
+  color: black;
 }
 
 .cd-colors-trd li:nth-of-type(2n) {

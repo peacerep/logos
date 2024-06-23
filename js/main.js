@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
 				block1 = splitText[0] + 'class="';
 			block2 = splitText[1].split('"');
 
-			var wrapperElement = $('<p style="color: white"></p>').text(block1),
+			var wrapperElement = $('<p></p>').text(block1),
 				spanElement = $('<span></span>').text(block2[0]);
 			spanElement.appendTo(wrapperElement);
 			wrapperElement.appendTo(containerHtml);
