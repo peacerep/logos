@@ -21,6 +21,7 @@ xPatterns
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
   padding: 6px;
   border-radius: 5px;
+  text-align: center;
   /* color: white; */
 }
 
@@ -823,7 +824,7 @@ section:after {
   clear: both;
 }
 
-section:nth-of-type(1) h2::before {
+/* section:nth-of-type(1) h2::before {
   content: '1. ';
 }
 
@@ -869,7 +870,7 @@ section:nth-of-type(9) h2::before {
 
 section:nth-of-type(10) h2::before {
   content: '10. ';
-}
+} */
 
 @media only screen and (min-width: 768px) {
   section {
@@ -910,27 +911,45 @@ section:nth-of-type(10) h2::before {
 }
 
 .cd-branding ul:last-of-type li:nth-of-type(1) img {
+  padding: 10px;
   width: 90px;
-  height: 90px;
   border-radius: 1em;
+  margin: 2px;
 }
 
 .cd-branding ul:last-of-type li:nth-of-type(2) img {
   width: 60px;
-  height: 60px;
   border-radius: .6em;
+  padding: 10px;
+  margin: 2px;
 }
 
 .cd-branding ul:last-of-type li:nth-of-type(3) img {
-  width: 32px;
-  height: 32px;
-  border-radius: .4em;
+  width: 40px;
+  border-radius: .6em;
+  padding: 10px;
+  margin: 2px;
 }
 
 .cd-branding ul:last-of-type li:nth-of-type(4) img {
-  width: 16px;
-  height: 16px;
+  width: 90px;
+  border-radius: .4em;
+  padding: 10px;
+  margin: 2px;
+}
+
+.cd-branding ul:last-of-type li:nth-of-type(5) img {
+  width: 60px;
   border-radius: .2em;
+  padding: 10px;
+  margin: 2px;
+}
+
+.cd-branding ul:last-of-type li:nth-of-type(6) img {
+  width: 40px;
+  border-radius: .2em;
+  padding: 10px;
+  margin: 2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1094,6 +1113,7 @@ section:nth-of-type(10) h2::before {
 
 /* xColor section - basic style */
 .cd-colors-agt li {
+  position: relative;
   text-align: center;
   width: 48%;
   float: left;

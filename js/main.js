@@ -143,6 +143,7 @@ jQuery(document).ready(function ($) {
 				actualHeight = actual.height(),
 				topMargin = actual.css('marginTop').replace('px', ''),
 				actualAnchor = $('.cd-main-nav').find('a[href="#' + actual.attr('id') + '"]');
+				console.log(actualAnchor);
 
 			if ((parseInt(actual.offset().top - $('.cd-main-nav').height() - topMargin) <= $(window).scrollTop()) && (parseInt(actual.offset().top + actualHeight - topMargin) > $(window).scrollTop() + 1)) {
 				actualAnchor.addClass('selected');
