@@ -57,29 +57,41 @@ jQuery(document).ready(function ($) {
 	********************/
 	var buttonsWrapper = $('#buttons .cd-box'),
 		buttonsHtml = buttonsWrapper.html(),
-		containerHtml = $('<div class="cd-box"></div>').insertAfter(buttonsWrapper),
+		containerHtml = $('<div class="cd-box cd-box-btn"></div>').insertAfter(buttonsWrapper),
 		buttonsHtmlText = buttonsHtml.split('</button>');
+		console.log(buttonsHtml);
 
-	$.map(buttonsHtmlText, function (value) {
-		if (value.indexOf('button') >= 0) {
-			var splitText = value.split('class="'),
-				block1 = splitText[0] + 'class="';
-			block2 = splitText[1].split('"');
+		$.map(buttonsHtmlText, function(value) {
+			if (value.indexOf('<button') >= 0) {
+				var buttonHtml = value + '</button>';
+				var wrapperElement = $('<p></p>').text(buttonHtml);
+				wrapperElement.appendTo(containerHtml);
+			}
+		});
 
-			var wrapperElement = $('<p></p>').text(block1),
-				spanElement = $('<span></span>').text(block2[0]);
-			spanElement.appendTo(wrapperElement);
-			wrapperElement.appendTo(containerHtml);
-			wrapperElement.append('"' + block2[1] + '&lt;/button&gt;');
+		var cssStyles = `
+		.btn {
+			border: none;
+			box-shadow: none;
+			border-radius: 2px;
+			font-family: "Montserrat";
+			color: black;
+			padding: 0.6em 2em;
+			cursor: pointer;
+			background: #FDD92F;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 		}
-	});
+	`;
+
+	var styleElement = $('<pre></pre>').text(cssStyles);
+	styleElement.appendTo(containerHtml);
 
 	/*******************
 		typography
 	********************/
 	var heading = $('#typography h1'),
 		subheading = $('#typography h3'),
-		subsubheading = $('#typography h6'),
+		subsubheading = $('#typography h5'),
 		headingDescriptionText = heading.children('span').eq(0),
 		subHeadingDescriptionText = subheading.children('span').eq(0),
 		subsubHeadingDescriptionText = subsubheading.children('span').eq(0),
@@ -89,6 +101,7 @@ jQuery(document).ready(function ($) {
 		bodyDescriptionText = body.children('span').eq(0),
 		subBodyDescriptionText = subBody.children('span').eq(0),
 		subsubBodyDescriptionText = subsubBody.children('span').eq(0);
+		
 
 	setTypography(heading, headingDescriptionText);
 	setTypography(subheading, subHeadingDescriptionText);
@@ -107,12 +120,10 @@ jQuery(document).ready(function ($) {
 	});
 
 	function setTypography(element, textElement) {
-		console.log(textElement);
-		var fontSize = Math.round(element.css('font-size').replace('px', '')) + 'px',
+		let fontSize = Math.round(element.css('font-size').replace('px', '')) + 'px',
 			fontFamily = (element.css('font-family').split(','))[0].replace(/\'/g, '').replace(/\"/g, ''),
 			fontWeight = element.css('font-weight');
-		console.log(fontSize, fontFamily, fontWeight);
-		textElement.text(fontWeight + ' ' + fontFamily + ' ' + fontSize);
+		textElement.text(fontFamily + ' ' + fontSize);
 	}
 
 	/*******************
@@ -143,7 +154,6 @@ jQuery(document).ready(function ($) {
 				actualHeight = actual.height(),
 				topMargin = actual.css('marginTop').replace('px', ''),
 				actualAnchor = $('.cd-main-nav').find('a[href="#' + actual.attr('id') + '"]');
-				console.log(actualAnchor);
 
 			if ((parseInt(actual.offset().top - $('.cd-main-nav').height() - topMargin) <= $(window).scrollTop()) && (parseInt(actual.offset().top + actualHeight - topMargin) > $(window).scrollTop() + 1)) {
 				actualAnchor.addClass('selected');

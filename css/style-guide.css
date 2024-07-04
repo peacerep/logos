@@ -142,59 +142,60 @@ h3 {
 }
 
 h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
+  font-size: 2em;
   line-height: 1.2;
   margin: 0 0 .4em;
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 1450px) {
   h1 {
-    font-size: 3.2rem;
+      font-size: 1.8em;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 4rem;
+      font-size: 1.6em;
   }
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-weight: 200;
+  font-size: 1.2em;
   line-height: 1;
   margin: 0 0 .2em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1450px) {
   h3 {
-    font-size: 2.2rem;
+    font-size: 1.1em;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   h3 {
-    font-size: 3rem;
+    font-size: 1em;
   }
 }
 
-h6 {
-  font-size: 1rem;
+
+
+h5 {
+  font-size: 1em;
   font-weight: 100;
   line-height: 1;
   margin: 0 0 .2em;
 }
 
-@media only screen and (min-width: 768px) {
-  h6 {
-    font-size: 1.8rem;
+@media only screen and (max-width: 1450px) {
+  h5 {
+    font-size: 0.9em;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  h6 {
-    font-size: 2rem;
+@media only screen and (max-width: 1024px) {
+  h5 {
+    font-size: 0.8em;
   }
 }
 
@@ -217,9 +218,21 @@ section>h2::before {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 0.9em;
   line-height: 1.4;
-  color: #58585b;
+  color: black;
+}
+
+@media only screen and (max-width: 1450px) {
+  p {
+      font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  p {
+      font-size: 0.63em;
+  }
 }
 
 p a {
@@ -227,12 +240,12 @@ p a {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   p {
     font-size: 1.4rem;
     line-height: 1.6;
   }
-}
+} */
 
 /* -------------------------------- 
 
@@ -242,13 +255,37 @@ xButtons
 .btn {
   border: none;
   box-shadow: none;
-  border-radius: .25em;
-  font-size: 1.4rem;
+  border-radius: 2px;
+  font-size: 1.4em;
   font-family: "Montserrat";
-  color: #ffffff;
+  color: black;
   padding: .6em 2em;
   cursor: pointer;
-  background: #0A1F3F;
+  background: #FDD92F;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cd-box-btn {
+  text-align: left;
+}
+
+pre {
+  text-align: left;
+  padding: 5px;
+  font-size: 0.9em;
+  white-space: pre-wrap; /* To wrap long lines */
+}
+
+@media only screen and (max-width: 1450px) {
+  pre {
+      font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  pre {
+      font-size: 0.63em;
+  }
 }
 
 .btn:focus {
@@ -256,7 +293,8 @@ xButtons
 }
 
 .no-touch .btn:hover {
-  background: #759de8;
+  background: #AA4197;
+  color: white;
 }
 
 .btn.btn-success {
@@ -1452,6 +1490,9 @@ section:nth-of-type(10) h2::before {
 }
 
 
+.cd-colors-trd {
+  margin-bottom: 0px;
+}
 /* xColor section - basic style */
 .cd-colors-trd li {
   text-align: center;
@@ -1546,12 +1587,12 @@ section:nth-of-type(10) h2::before {
 }
 
 /* xTypography section - basic style */
-.cd-typography h1::before {
+/* .cd-typography h1::before {
   content: 'Aa - ';
   color: #fdd900;
-}
+} */
 
-.cd-typography h3::before {
+/* .cd-typography h3::before {
   content: 'Aa - ';
   color: #fdd900;
 }
@@ -1559,7 +1600,7 @@ section:nth-of-type(10) h2::before {
 .cd-typography h6::before {
   content: 'Aa - ';
   color: #fdd900;
-}
+} */
 
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;
