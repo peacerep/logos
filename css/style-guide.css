@@ -256,7 +256,7 @@ xButtons
   border: none;
   box-shadow: none;
   border-radius: 2px;
-  font-size: 1.4em;
+  font-size: 1.1em;
   font-family: "Montserrat";
   color: black;
   padding: .6em 2em;
@@ -264,6 +264,19 @@ xButtons
   background: #FDD92F;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 1450px) {
+  .btn {
+      font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .btn {
+      font-size: 0.9em;
+  }
+}
+
 
 .cd-box-btn {
   text-align: left;
@@ -325,11 +338,11 @@ pre {
   background: #5f8ee4;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .btn {
     font-size: 1.6rem;
   }
-}
+} */
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */

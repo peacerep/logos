@@ -72,7 +72,6 @@ jQuery(document).ready(function ($) {
 		var cssStyles = `
 		.btn {
 			border: none;
-			box-shadow: none;
 			border-radius: 2px;
 			font-family: "Montserrat";
 			color: black;
