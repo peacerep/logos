@@ -1299,16 +1299,16 @@ section:nth-of-type(10) h2::before {
 }
 
 .cd-colors-stg li:nth-of-type(5) .cd-color-swatch-stg {
-  background: #7B8AD6;
+  background: #3AAE2A;
 }
 
 .cd-colors-stg li:nth-of-type(6) .cd-color-swatch-stg {
-  background: #3AAE2A;
+  background: #7B8AD6;
 }
 
 
 .cd-colors-stg li:nth-of-type(7) .cd-color-swatch-stg {
-  background: #34495E;
+  background: #c0de88;
 }
 
 
